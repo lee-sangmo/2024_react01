@@ -1,5 +1,5 @@
 import './App.css';
-import Library from './components/step01/Library';
+import CourseListCard from './components/course/CourseListCard';
 
 // function Header() {
 //   return(
@@ -34,8 +34,8 @@ import Library from './components/step01/Library';
 // 리액트에서는 class 예약어 사용 불가 => className 을 사용한다
 function App() {
   return (
-    <div>
-    {/* <main> */}
+
+    <main>
       {/* 
       <Header />
       <Main />
@@ -63,14 +63,13 @@ function App() {
       </div> 
       */}
   
-      {/* 
-      3단계. 중복되는 부분을 List 형태로 전부 담을 수있게 만들어 넣는다
-      <CourseListCard /> 
-      */}
-    {/* </main> */}
 
-      <Library />
-    </div>
+      {/* 3단계. 중복되는 부분을 List 형태로 전부 담을 수있게 만들어 넣는다 */}
+      <CourseListCard /> 
+      {/* <Library /> */}
+   </main>
+
+
   );
 }
 
