@@ -1,75 +1,31 @@
 import './App.css';
-import CourseListCard from './components/course/CourseListCard';
-import Profile from './components/step02/Profile';
+import CourseListCard from './components/step04/CourseListCard';
 
-// function Header() {
-//   return(
-//     <header>
-//       <h2>Header</h2>
-//     </header>
-//   );
-// }
-
-// function Footer() {
-//   return(
-//     <footer>
-//       <h2>footer</h2>
-//     </footer>
-//   );
-// }
-
-// function Main() {
-//   return(
-//     <main>
-//       <Counter />
-//     </main>
-//   );
-// }
-// // 파스칼 케이스 사용해야 한다
-// function Counter() {
-//   return (
-//     <button>Counter</button>
-//   );
-// }
-
-// 리액트에서는 class 예약어 사용 불가 => className 을 사용한다
 function App() {
+  const items = [
+    {
+      title: '입문자를 위한, HTML&CSS 웹 개발 입문',
+      description: '웹 개발에 필요한 기본 지식을 배웁니다.',
+      image: './img/tree-1.jpg',
+    },
+    {
+      title: '입문자를 위한, ES6+ 최신 자바스크립트 입문',
+      description: '쉽고! 알찬! 내용을 준비했습니다.',
+      image: './img/tree-2.jpg',
+    },
+    {
+      title: '포트폴리오 사이트 만들고 배포까지!',
+      description: '포트폴리오 사이트를 만들고 배포해 보세요.',
+      image: './img/tree-3.jpg',
+    }
+  ]
+
+  // 조건부 렌더링 : if, &&, 삼항연산자(조건식? 참: 거짓)
+  const ischk = true;
   return (
-    <main>
-      {/* 
-      <Header />
-      <Main />
-      <Footer />
-      */}
-
-      {/* 
-      <main>
-        1단계. 내용 전체를 다 집어 넣는다
-      </main>
-        */}
-
-      {/*   
-      <div class="card">
-        <div class="card__header">강의 목록</div>
-        <div class="card__body">
-          <div class="courses">
-
-            2단계. 중복되는 부분만 별도로 만들어 넣는다
-            <Courseitem />
-            <Courseitem />
-            <Courseitem />            
-          </div>
-        </div>
-      </div> 
-      */}
-
-      {/* 3단계. 중복되는 부분을 List 형태로 전부 담을 수있게 만들어 넣는다 */}
-      {/* <CourseListCard /> */}
-      {/* <Library /> */}
-      <hr />
-      <Profile />
-  </main>
-
+    <div className='App'>
+      {ischk ? <h2>Hello, react</h2> : <CourseListCard items={items} /> }
+    </div>
   );
 }
 
