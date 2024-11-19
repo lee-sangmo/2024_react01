@@ -6,6 +6,8 @@ import TextList2 from './components/step06/TextList2';
 import TextList3 from './components/step06/TextList3';
 import Event01 from './components/step07/Event01';
 import Event02 from './components/step07/Event02';
+import Count from './components/step08/Count';
+import CourseListCard08 from './components/step08/CourseListCard08';
 
 function App() {
   const items = [
@@ -51,6 +53,12 @@ function App() {
       <hr />
       <h3>Event Handler 적용(children)</h3>
       <Event02 />
+      <hr />
+      <h3>Event Handler 적용(children)</h3>
+      <CourseListCard08 items={items} />
+      <hr />
+      <h3>Event Handler 적용(Count)</h3>
+      <Count />
     </div>
   );
 }
