@@ -1,5 +1,6 @@
 import './App.css';
 import CourseListCard from './components/course/CourseListCard';
+import Profile from './components/step02/Profile';
 
 // function Header() {
 //   return(
@@ -34,7 +35,6 @@ import CourseListCard from './components/course/CourseListCard';
 // 리액트에서는 class 예약어 사용 불가 => className 을 사용한다
 function App() {
   return (
-
     <main>
       {/* 
       <Header />
@@ -62,13 +62,13 @@ function App() {
         </div>
       </div> 
       */}
-  
 
       {/* 3단계. 중복되는 부분을 List 형태로 전부 담을 수있게 만들어 넣는다 */}
-      <CourseListCard /> 
+      {/* <CourseListCard /> */}
       {/* <Library /> */}
-   </main>
-
+      <hr />
+      <Profile />
+  </main>
 
   );
 }
