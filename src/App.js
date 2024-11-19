@@ -1,6 +1,9 @@
 import './App.css';
 import CourseListCard from './components/step04/CourseListCard';
 import PackingList from './components/step05/PackingList';
+import TextList from './components/step06/TextList';
+import TextList2 from './components/step06/TextList2';
+import TextList3 from './components/step06/TextList3';
 
 function App() {
   const items = [
@@ -28,6 +31,15 @@ function App() {
       {ischk ? <h2>Hello, react</h2> : <CourseListCard items={items} /> }
       <hr />
       <PackingList />
+      <hr />
+      <h2>key가 없어 오류 발생</h2>
+      <TextList />
+      <hr />
+      <h2>key가 있어 오류 미발생</h2>
+      <TextList2 />
+      <hr />
+      <h2>'chemist' filter 적용</h2>
+      <TextList3 />
     </div>
   );
 }
