@@ -4,6 +4,8 @@ import PackingList from './components/step05/PackingList';
 import TextList from './components/step06/TextList';
 import TextList2 from './components/step06/TextList2';
 import TextList3 from './components/step06/TextList3';
+import Event01 from './components/step07/Event01';
+import Event02 from './components/step07/Event02';
 
 function App() {
   const items = [
@@ -35,14 +37,20 @@ function App() {
       <hr />
       <PackingList />
       <hr />
-      <h2>key가 없어 오류 발생</h2>
+      <h3>key가 없어 오류 발생</h3>
       <TextList />
       <hr />
-      <h2>key가 있어 오류 미발생</h2>
+      <h3>key가 있어 오류 미발생</h3>
       <TextList2 />
       <hr />
-      <h2>'chemist' filter 적용</h2>
+      <h3>'chemist' filter 적용</h3>
       <TextList3 />
+      <hr />
+      <h3>Event Handler 적용</h3>
+      <Event01 />
+      <hr />
+      <h3>Event Handler 적용(children)</h3>
+      <Event02 />
     </div>
   );
 }
